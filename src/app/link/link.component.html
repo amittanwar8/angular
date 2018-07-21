@@ -1,0 +1,43 @@
+<div class="container" >
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <form name="form1" >
+                <div class="form-group">
+                    <label class="label" style="color: black">Title</label>
+                    <input type="text" [(ngModel)]="Title" name="Title" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <label class="label" style="color: black">Link</label>
+                    <input type="text" [(ngModel)]="LinkURl" name="LinkURl" class="form-control" />
+
+                </div>
+                <div class="form-group">
+                    <button type="button" name="Save" (click)="SaveLink()"  class="btn btn-primary">Save</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div >
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Link Name</th>
+                    <th>Link Url</th>
+                    <th>Link Date`</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of Link">
+                    <td>{{item.id}}</td>
+                    <td>{{item.link_name}}</td>
+                    <td>{{item.link_url}}</td>
+                    <td>{{item.createdDate}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

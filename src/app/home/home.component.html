@@ -1,0 +1,24 @@
+<div class="row">
+<div class="col-sm-5 col-sm-offset-3">
+
+    <form name="form" >
+        <table class="table table-border"><tr><td>Login ID</td><td>
+            <input name="loginid" class="form-control" type="text" [(ngModel)]="loginid" /></td></tr>
+        <tr><td>Password</td><td><input name="Password" class="form-control" type="text" [(ngModel)]="password" /></td></tr>
+        <tr><td></td>
+        <td><button type="button"  class="btn btn-primary"  (click)="SubmitLogin()">Login</button></td>
+        </tr>
+
+        <tr><td colspan="2">
+            {{mess}}
+        </td></tr>
+        </table>
+
+
+    </form>
+
+</div>
+
+
+
+</div>
